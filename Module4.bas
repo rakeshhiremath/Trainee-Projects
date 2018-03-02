@@ -29,22 +29,6 @@ Private Sub InsertRows_Click()
         Selection.Copy
     Next i
     
-   'One more loop is required i guess
-   'For k = 1 To k = 12
-    'For j = 18 To 37 Step 13
-        'Rows(j).Select
-        'Selection.Insert Shift:=xlDown
-        'Selection.Copy
-   ' Next j
-    'Next k
-    
-        
-
-    'For l = 17 To 36 Step 13
-
-    'Range("D4:D17").Copy
-   ' Range("D4").PasteSpecial Transpose:=True
-   ' Next l
     
     
 End Sub
@@ -69,22 +53,7 @@ Private Sub Separate_Click()
         Selection.Copy
     Next i
     
-   'One more loop is required i guess
-   'For k = 1 To k = 12
-    'For j = 18 To 37 Step 13
-        'Rows(j).Select
-        'Selection.Insert Shift:=xlDown
-        'Selection.Copy
-   ' Next j
-    'Next k
-    
-        
-
-    'For l = 17 To 36 Step 13
-
-    'Range("D4:D17").Copy
-   ' Range("D4").PasteSpecial Transpose:=True
-   ' Next l
+   
 Sheets("Sheet1").Columns(4).Copy Destination:=Sheets("Sheet4").Columns(2)
     Sheets("Sheet1").Columns(5).Copy Destination:=Sheets("Sheet4").Columns(3)
     
@@ -118,20 +87,7 @@ Dim k As Long
         Range(SelRng).Select
         Selection.Copy
 
-        'Rw_i = Range(CStr("E" & j)).Value
-        'Rw_j = Range(CStr("F" & j)).Value
-       ' SelRng = "B" & Rw_i & ":" & "B" & Rw_j
-       ' Range("SelRng").Select
-        'Selection.Copy
-
-    'Range("G2:H3").Copy
-    'Range("E2").PasteSpecial xlPasteValues
-
-    'SelRng = Range(CStr("K" & i)).Value
-    
-    'SelRng1 = Range(CStr("M" & j - 2))
-    'Range(SelRng1).Select
-    'Range("Rw_i").Offset(50, 0).Select
+       
   
     SelRng = "m" & Z - 1
     Range(SelRng).Select
@@ -158,20 +114,7 @@ Dim k As Long
         Range(SelRng).Select
         Selection.Copy
 
-        'Rw_i = Range(CStr("E" & j)).Value
-        'Rw_j = Range(CStr("F" & j)).Value
-       ' SelRng = "B" & Rw_i & ":" & "B" & Rw_j
-       ' Range("SelRng").Select
-        'Selection.Copy
-
-    'Range("G2:H3").Copy
-    'Range("E2").PasteSpecial xlPasteValues
-
-    'SelRng = Range(CStr("K" & i)).Value
-    
-    'SelRng1 = Range(CStr("M" & j - 2))
-    'Range(SelRng1).Select
-    'Range("Rw_i").Offset(50, 0).Select
+        
   
     SelRng = "AB" & Z - 1
     Range(SelRng).Select
@@ -217,20 +160,7 @@ Dim k As Long
         Range(SelRng).Select
         Selection.Copy
 
-        'Rw_i = Range(CStr("E" & j)).Value
-        'Rw_j = Range(CStr("F" & j)).Value
-       ' SelRng = "B" & Rw_i & ":" & "B" & Rw_j
-       ' Range("SelRng").Select
-        'Selection.Copy
-
-    'Range("G2:H3").Copy
-    'Range("E2").PasteSpecial xlPasteValues
-
-    'SelRng = Range(CStr("K" & i)).Value
-    
-    'SelRng1 = Range(CStr("M" & j - 2))
-    'Range(SelRng1).Select
-    'Range("Rw_i").Offset(50, 0).Select
+       
   
     SelRng = "m" & Z - 1
     Range(SelRng).Select
@@ -239,7 +169,7 @@ Dim k As Long
      
      
      Next Z
- 'Next j
+
  
  
     For Z = 5 To (Cells(3, 6).Value) + 4 Step 13
@@ -257,20 +187,7 @@ Dim k As Long
         Range(SelRng).Select
         Selection.Copy
 
-        'Rw_i = Range(CStr("E" & j)).Value
-        'Rw_j = Range(CStr("F" & j)).Value
-       ' SelRng = "B" & Rw_i & ":" & "B" & Rw_j
-       ' Range("SelRng").Select
-        'Selection.Copy
-
-    'Range("G2:H3").Copy
-    'Range("E2").PasteSpecial xlPasteValues
-
-    'SelRng = Range(CStr("K" & i)).Value
-    
-    'SelRng1 = Range(CStr("M" & j - 2))
-    'Range(SelRng1).Select
-    'Range("Rw_i").Offset(50, 0).Select
+     
   
     SelRng = "AB" & Z - 1
     Range(SelRng).Select
