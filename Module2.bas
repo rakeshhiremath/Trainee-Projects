@@ -1,6 +1,5 @@
 Attribute VB_Name = "Module2"
 Sub CONDITION1()
-Attribute CONDITION1.VB_ProcData.VB_Invoke_Func = " \n14"
 '
 ' CONDITION1 Macro
 '
@@ -29,7 +28,7 @@ Attribute CONDITION1.VB_ProcData.VB_Invoke_Func = " \n14"
         .TintAndShade = 0
     End With
     Range("AL45").Select
-    ActiveWindow.SmallScroll down:=9
+    ActiveWindow.SmallScroll Down:=9
     Range("M53:M64").Select
     Range(Selection, Selection.End(xlToRight)).Select
     Selection.FormatConditions.AddColorScale ColorScaleType:=3
